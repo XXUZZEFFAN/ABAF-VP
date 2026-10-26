@@ -1,0 +1,3 @@
+method,N,successes,success_rate,real_n,real_successes,benchmark_n,benchmark_successes,successful_real_projects,ci95
+Original B4,60,5,0.08333333333333333,36,1,24,4,1,
+B4+ALIGN,60,47,0.7833333333333333,36,26,24,21,17,"(0.6724137931034483, 0.8813559322033898)"

@@ -1,0 +1,28 @@
+view,metric,value,unit,numerator,denominator,n,note
+NEW_EXECUTION_THIS_ROUND,scans_started,0,count,0,,,no detector or scanner process started
+NEW_EXECUTION_THIS_ROUND,builds_started,0,count,0,,,no Gradle or build process started
+NEW_EXECUTION_THIS_ROUND,verification_runs_started,0,count,0,,,no original verifier started; E3 receipts are read only
+NEW_EXECUTION_THIS_ROUND,ast_parses_started,0,count,0,,,no AST parser started; javacache entries are read only
+NEW_EXECUTION_THIS_ROUND,new_machine_seconds,0,s,0,,,the evaluated system was not executed in this round
+ALIGNMENT_INCREMENT,checker_seconds,7.9078,s,86,86,86,86 source-level target-rule checks on the recorded snapshots
+ALIGNMENT_INCREMENT,ast_seconds,22.366163,s,102,102,102,102 unique task-source cold parses; cached reuse is not charged again
+ALIGNMENT_INCREMENT,input_prep_seconds,0,s,0,,0,E3 reused the E4 input identities; no second preparation
+ALIGNMENT_INCREMENT,manual_binding_seconds,null,s,0,43,43,未记录/人工配置: rule selection and target binding have no timer
+ALIGNMENT_INCREMENT,known_increment_seconds,30.273963,s,,,,known machine time only; excludes manual binding and development
+ALIGNMENT_INCREMENT,new_end_to_end_successes,42,count,42,100,100,B4+ALIGN minus original B4: 47 - 5
+ALIGNMENT_INCREMENT,seconds_per_new_success,0.720809,s/success,30.273963,42,42,partial-cost ratio; not a full deployment cost
+EXTENDED_TOTAL,b4_tool_seconds,487.317,s,120,120,120,"original B4 run-key base times, counted once"
+EXTENDED_TOTAL,b4_input_prep_seconds,65.019,s,72,120,120,"input identity preparation counted once; 72/120 side identities timed, 48 null (never zero)"
+EXTENDED_TOTAL,alignment_checker_seconds,7.9078,s,86,86,86,same checker total as the increment view
+EXTENDED_TOTAL,alignment_ast_seconds,22.366163,s,102,102,102,"unique cold parses, shared across rules"
+EXTENDED_TOTAL,original_verification_seconds,null,s,0,60,60,未单独计时; v1 contract lookup is sub-second and is not re-run
+EXTENDED_TOTAL,known_total_seconds,582.609963,s,,,,"known machine time, not a complete wall-clock deployment cost"
+EXTENDED_TOTAL,end_to_end_successes,47,count,47,100,100,47/100 and 47/60
+EXTENDED_TOTAL,seconds_per_complete_success,12.395957,s/success,582.609963,47,47,known machine time divided by 47; partial cost
+EXTENDED_TOTAL,median_task_seconds,7.326,s,60,60,60,60 pair tasks with complete timing; B4 v1 median is 6.756 s
+EXTENDED_TOTAL,p90_task_seconds,16.927,s,60,60,60,60 pair tasks with complete timing; B4 v1 P90 is 16.883 s
+EXTENDED_TOTAL,median_task_seconds_success_only,7.285,s,47,47,47,47 successful tasks only
+DEVELOPMENT_SEPARATE,development_ast_seconds,24.837789,s,122,122,122,"development and counterexample AST, not per-task execution cost"
+DEVELOPMENT_SEPARATE,counterexample_checker_seconds,0.0131,s,30,162,162,only cases that recorded duration_s; 132 cases untimed
+DEVELOPMENT_SEPARATE,rule_registry_and_binding,unrecorded/manual,,0,43,43,43 target rules and bindings were authored manually without a timer
+NEW_EXECUTION_THIS_ROUND,analysis_script_seconds,24.264102,s,24.264102,,4,statistics / relink / scoring / check scripts only; not part of the evaluated system cost

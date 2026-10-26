@@ -1,0 +1,6 @@
+method,tasks_with_complete_timing,total_known_machine_s,input_prep_s_counted_once,total_including_prep_s,median_task_s,p90_task_s,distinct_run_keys,shared_keys_with_other_methods,null_duration_keys,counted_logical_runs,note
+B0,59,537.248,65.023,602.271,7.332,14.732,120,76,0,120,table B: same key uses the same base run time for every method; input identity hashing counted once per method for distinct inputs
+B1,45,607.624,30.047,637.671,9.18,30.623,92,64,0,92,table B: same key uses the same base run time for every method; input identity hashing counted once per method for distinct inputs
+B2,46,560.638,29.796,590.434,7.91,40.711,94,82,0,94,table B: same key uses the same base run time for every method; input identity hashing counted once per method for distinct inputs
+B3,60,345.956,65.019,410.976,3.529,15.984,120,72,0,120,table B: same key uses the same base run time for every method; input identity hashing counted once per method for distinct inputs
+B4,60,487.317,65.019,552.336,6.756,16.883,120,106,0,120,table B: same key uses the same base run time for every method; input identity hashing counted once per method for distinct inputs

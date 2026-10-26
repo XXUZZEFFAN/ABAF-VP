@@ -1,0 +1,7 @@
+method,N,plan_returned_num,plan_returned_den,plan_return_rate,abstained,input_tasks_I,executable_set_E,executable_unknown,C_num,C_den_100,C_rate_100,C_den_60,C_rate_60,C_den_E,C_rate_E,V_num,V_den_C,V_rate,S_num,S_den_100,S_rate_100,S_den_60,S_rate_60,method_version,V_den_60,V_rate_60
+B0,100,100,100,1.0,0,60,60,0,59,100,0.59,60,0.983333,60,0.983333,0,59,0.0,0,100,0.0,60,0.0,"frozen old baselines.plan_b0 (category map, plan_id tie-break)",60,0.0
+B1,100,100,100,1.0,0,60,46,0,45,100,0.45,60,0.75,46,0.978261,2,45,0.044444,1,100,0.01,60,0.016667,frozen old baselines.plan_b1 (BM25 k1=1.2 b=0.75),60,0.033333
+B2,100,100,100,1.0,0,60,47,0,46,100,0.46,60,0.766667,47,0.978723,2,46,0.043478,1,100,0.01,60,0.016667,frozen old baselines.plan_b2 (all-MiniLM-L6-v2 cosine),60,0.033333
+B3,100,76,100,0.76,24,60,60,0,60,100,0.6,60,1.0,60,1.0,0,60,0.0,0,100,0.0,60,0.0,frozen old baselines.plan_b3 (artifact/language/platform/runtime compatibility),60,0.0
+B4,100,98,100,0.98,2,60,60,0,60,100,0.6,60,1.0,60,1.0,5,60,0.083333,5,100,0.05,60,0.083333,planner.current.exp1.v2,60,0.083333
+B4+ALIGN,100,98,100,0.98,2,60,60,0,60,100,0.6,60,1.0,60,1.0,47,60,0.783333,47,100,0.47,60,0.783333,B4 v1 (planner.current.exp1.v2) + exp3_rule_alignment_v5 (B4 v2加目标规则补正),60,0.783333

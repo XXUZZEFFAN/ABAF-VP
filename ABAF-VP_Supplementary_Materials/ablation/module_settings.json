@@ -1,0 +1,22 @@
+{
+  "FULL": {
+    "mechanism": true,
+    "oracle": true,
+    "evidence": true
+  },
+  "A1_no_mechanism": {
+    "mechanism": false,
+    "oracle": true,
+    "evidence": true
+  },
+  "A2_no_oracle": {
+    "mechanism": true,
+    "oracle": false,
+    "evidence": true
+  },
+  "A3_no_evidence": {
+    "mechanism": true,
+    "oracle": true,
+    "evidence": false
+  }
+}

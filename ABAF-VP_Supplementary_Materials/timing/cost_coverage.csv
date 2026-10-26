@@ -1,0 +1,9 @@
+item,unit,required_ops,timed_ops,null_ops,coverage,missing_reason,impact
+B4 tool runs,run keys,120,120,0,1.0,,base flow fully timed
+B4 input identity preparation,side identities,120,72,48,0.6,"48 side identities have no prep timer (historical/reused snapshots); null, not zero",the known prep total covers only the timed identities; no second preparation for the extension
+Alignment checker runs,receipts,86,86,0,1.0,,all 43 aligned pairs have both sides timed
+Task-source AST parses,unique source sha256,102,102,0,1.0,,cold parse counted once per source; cache hits not zero
+Rule selection and target binding,pairs,43,0,43,0.0,未记录/人工配置,manual effort excluded from machine time; not assumed to be zero
+Original B4 target verification,tasks,60,0,60,0.0,not separately instrumented in v1; contract lookup,registered as null; the 4 recorded probe checks belong to B1/B2
+Development counterexample checks,cases,162,30,132,0.185185,only some suites recorded duration_s,development cost is reported separately and does not enter per-task cost
+Development AST parses,unique source sha256,122,122,0,1.0,,development cost is reported separately
